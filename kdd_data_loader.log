@@ -1,0 +1,44 @@
+2026-01-14 21:20:11,153 - KDD_LOADER - INFO - KDD Cup 99 Data Loader initialized
+2026-01-14 21:20:11,416 - KDD_LOADER - INFO - Loaded 50000 records from kddcup.data_10_percent/kddcup.data_10_percent
+2026-01-14 21:20:11,427 - KDD_LOADER - INFO - Attack distribution:
+Series([], Name: count, dtype: int64)
+2026-01-14 21:20:11,427 - KDD_LOADER - INFO - Starting data preprocessing...
+2026-01-14 21:20:11,630 - KDD_LOADER - INFO - Data preprocessed: 50000 samples, 41 features
+2026-01-14 21:20:11,678 - KDD_LOADER - INFO - Data split: Train 40000 samples, Test 10000 samples
+2026-01-14 21:20:36,088 - KDD_LOADER - INFO - KDD Cup 99 Data Loader initialized
+2026-01-14 21:20:36,312 - KDD_LOADER - INFO - Loaded 50000 records from kddcup.data_10_percent/kddcup.data_10_percent
+2026-01-14 21:20:36,312 - KDD_LOADER - INFO - Attack distribution:
+Series([], Name: count, dtype: int64)
+2026-01-14 21:20:36,312 - KDD_LOADER - INFO - Starting data preprocessing...
+2026-01-14 21:20:36,471 - KDD_LOADER - INFO - Data preprocessed: 50000 samples, 41 features
+2026-01-14 21:20:36,531 - KDD_LOADER - INFO - Data split: Train 40000 samples, Test 10000 samples
+2026-01-14 21:21:19,704 - KDD_LOADER - INFO - KDD Cup 99 Data Loader initialized
+2026-01-14 21:21:19,911 - KDD_LOADER - INFO - Loaded 50000 records from kddcup.data_10_percent/kddcup.data_10_percent
+2026-01-14 21:21:19,912 - KDD_LOADER - INFO - Attack distribution:
+Series([], Name: count, dtype: int64)
+2026-01-14 21:21:19,936 - KDD_LOADER - INFO - Starting data preprocessing...
+2026-01-14 21:21:20,113 - KDD_LOADER - INFO - Data preprocessed: 50000 samples, 41 features
+2026-01-14 21:21:20,168 - KDD_LOADER - INFO - Data split: Train 40000 samples, Test 10000 samples
+2026-01-14 23:04:38,952 - KDD_LOADER - ERROR - Failed to initialize models: 'max_samples'
+2026-01-14 23:06:05,186 - KDD_LOADER - INFO - KDD Cup 99 Data Loader initialized
+2026-01-14 23:06:05,249 - KDD_LOADER - INFO - Loaded 10000 records from kddcup.data_10_percent/kddcup.data_10_percent
+2026-01-14 23:06:05,253 - KDD_LOADER - INFO - Attack distribution:
+Series([], Name: count, dtype: int64)
+2026-01-14 23:06:05,261 - KDD_LOADER - INFO - Starting data preprocessing...
+2026-01-14 23:06:05,310 - KDD_LOADER - INFO - Data preprocessed: 10000 samples, 41 features
+2026-01-14 23:06:05,320 - KDD_LOADER - INFO - Data split: Train 8000 samples, Test 2000 samples
+2026-01-14 23:06:05,320 - KDD_LOADER - ERROR - Failed to load pre-trained models: 'model_save_path'
+2026-01-14 23:06:05,320 - KDD_LOADER - INFO - ML models initialized successfully
+2026-01-14 23:06:05,320 - KDD_LOADER - ERROR - Failed to initialize network monitoring: 'monitor_interfaces'
+2026-01-14 23:06:05,320 - KDD_LOADER - ERROR - Failed to load IOC database: 'ioc_database_path'
+2026-01-14 23:06:05,320 - KDD_LOADER - ERROR - Failed to initialize threat intelligence: 'enable_yara'
+2026-01-14 23:06:05,322 - KDD_LOADER - ERROR - Error in flow processing thread: 'batch_size'
+2026-01-14 23:06:05,322 - KDD_LOADER - INFO - Background processing thread started
+2026-01-14 23:06:05,322 - KDD_LOADER - INFO - ORDER Defense Engine initialized successfully
+2026-01-14 23:06:05,322 - KDD_LOADER - INFO - One-Class SVM initialized
+2026-01-14 23:06:05,536 - KDD_LOADER - INFO - Autoencoder initialized
+2026-01-14 23:06:05,686 - KDD_LOADER - INFO - LSTM model initialized
+2026-01-14 23:06:05,765 - KDD_LOADER - INFO - Deep Neural Network classifier initialized
+2026-01-14 23:06:05,766 - KDD_LOADER - INFO - Isolation Forest updated to 200 trees
+2026-01-14 23:06:05,766 - KDD_LOADER - INFO - Enhanced ORDER Engine initialized with paper-specified features
+2026-01-14 23:06:05,766 - KDD_LOADER - INFO - Training enhanced ORDER models...

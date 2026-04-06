@@ -1,0 +1,107 @@
+{
+  "experiment_date": "2026-01-14T21:22:17.559711",
+  "hardware": {
+    "cpu_model": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 8,
+    "cpu_count_physical": 4,
+    "ram_gb": 7.84,
+    "ram_available_gb": 1.01,
+    "os": "Windows",
+    "os_version": "10.0.26200",
+    "python_version": "3.11.0",
+    "gpu_available": false,
+    "timestamp": "2026-01-14T21:21:19.704924"
+  },
+  "dataset": {
+    "total_samples": 50000,
+    "train_samples": 40000,
+    "test_samples": 10000,
+    "features": 41,
+    "classes": 5,
+    "class_distribution": {
+      "dos": 2325,
+      "normal": 7593,
+      "probe": 69,
+      "r2l": 12,
+      "u2r": 1
+    },
+    "attack_percentage": 76.75,
+    "normal_percentage": 23.25
+  },
+  "baseline_results": {
+    "IsolationForest": {
+      "accuracy": 27.04,
+      "precision": 0.7099,
+      "recall": 0.0835,
+      "f1_score": 0.1495,
+      "roc_auc": 0.8089,
+      "training_time_seconds": 0.44,
+      "inference_time_ms": 0.1,
+      "throughput_samples_per_sec": 10000.0
+    },
+    "RandomForest": {
+      "accuracy": 99.95,
+      "precision": 0.9994,
+      "recall": 0.9995,
+      "f1_score": 0.9994,
+      "cv_mean": 0.9993,
+      "cv_std": 0.0005,
+      "training_time_seconds": 1.73,
+      "inference_time_ms": 0.1,
+      "throughput_samples_per_sec": 10000.0
+    },
+    "SVM": {
+      "accuracy": 99.84,
+      "precision": 0.9983,
+      "recall": 0.9984,
+      "f1_score": 0.9983,
+      "cv_mean": 0.9984,
+      "cv_std": 0.0009,
+      "training_time_seconds": 26.59,
+      "inference_time_ms": 0.1,
+      "throughput_samples_per_sec": 10000.0
+    },
+    "LogisticRegression": {
+      "accuracy": 99.95,
+      "precision": 0.9996,
+      "recall": 0.9995,
+      "f1_score": 0.9995,
+      "cv_mean": 0.9984,
+      "cv_std": 0.001,
+      "training_time_seconds": 3.49,
+      "inference_time_ms": 0.1,
+      "throughput_samples_per_sec": 10000.0
+    },
+    "NaiveBayes": {
+      "accuracy": 45.25,
+      "precision": 0.8173,
+      "recall": 0.4525,
+      "f1_score": 0.4499,
+      "cv_mean": 0.6834,
+      "cv_std": 0.0232,
+      "training_time_seconds": 0.04,
+      "inference_time_ms": 0.1,
+      "throughput_samples_per_sec": 10000.0
+    }
+  },
+  "failure_analysis": {
+    "RandomForest": {
+      "worst_performing_class": "u2r",
+      "worst_recall": 0.0,
+      "false_positive_rate": 0.0002,
+      "false_negative_rate": 0.003
+    },
+    "SVM": {
+      "worst_performing_class": "u2r",
+      "worst_recall": 0.0,
+      "false_positive_rate": 0.0006,
+      "false_negative_rate": 0.0007
+    },
+    "LogisticRegression": {
+      "worst_performing_class": "r2l",
+      "worst_recall": 0.9167,
+      "false_positive_rate": 0.0003,
+      "false_negative_rate": 0.1057
+    }
+  }
+}
